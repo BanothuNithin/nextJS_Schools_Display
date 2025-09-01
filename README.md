@@ -3,6 +3,8 @@
 ## Overview
 The School Management App is a web application built using Next.js and MySQL that allows users to add and display school information. The application consists of two main pages: one for adding school details and another for displaying the list of schools in a responsive card format.
 
+**Live demo**: https://next-js-schools-display.vercel.app/addSchool
+
 ## Features
 - **Add School**: A form to input school details including name, address, city, state, contact number, email, and image upload.
 - **Show Schools**: A page that fetches and displays a list of schools from the database in a visually appealing card layout.

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import SchoolCard from "../components/SchoolCard";
 import styles from "../styles/showSchools.module.css";
 
+export const dynamic = "force-dynamic"; // prevents build-time errors
+
 const ShowSchools = () => {
   const [schools, setSchools] = useState([]);
 
@@ -20,11 +22,11 @@ const ShowSchools = () => {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>List of Schools</h1>
+      <h1>List of Schools</h1>
       {schools.length === 0 ? (
         <p>No schools added yet.</p>
       ) : (
-        <div className={styles.grid}>
+        <div className={styles.cardGrid}>
           {schools.map((school) => (
             <SchoolCard key={school.id} school={school} />
           ))}

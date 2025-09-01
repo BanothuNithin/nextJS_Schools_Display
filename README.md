@@ -68,5 +68,5 @@ school-management-app
 - React Hook Form
 - CSS Modules
 
-## License
-This project is licensed under the MIT License.
+<img width="1920" height="975" alt="Screenshot (96)" src="https://github.com/user-attachments/assets/459140ff-37a7-4897-8775-723b9a5806a2" />
+

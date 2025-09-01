@@ -1,0 +1,59 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive */
+  gap: 12px;   /* smaller gap */
+  align-items: start; 
+  justify-items: center;  /* center the cards in each grid cell */
+}
+
+.schoolCard {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;   /* ensures equal height in grid */
+}
+
+.schoolCard:hover {
+  transform: translateY(-4px);
+}
+
+.schoolImage {
+  width: 100%;
+  height: 150px;     /* fixed height */
+  object-fit: cover; /* keep aspect ratio */
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.schoolInfo {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.schoolName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.schoolAddress,
+.schoolCity {
+  font-size: 14px;
+  color: #555;
+}
